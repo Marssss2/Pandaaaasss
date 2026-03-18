@@ -1,0 +1,5 @@
+import pandas as pd
+
+df = pd.read_csv('PKMN.csv', index_col='Name')
+
+print(df.iloc[0:11:2, 0:3])
