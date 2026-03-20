@@ -11,6 +11,9 @@ df = pd.read_csv('PKMN.csv')
 #water_pokemon = df[(df['Type1'] == 'Water') |
  #                  (df['Type2'] == 'Water')]
 
-FF_pokemon = df[(df['Type1'] == 'Fire') | (df['Type2'] == 'Flying')]
+#FF_pokemon = df[(df['Type1'] == 'Fire') & (df['Type2'] == 'Flying')]
 
-print(FF_pokemon)
+PR_pokemon = df[(df['Type1'] == 'Rock') | (df['Type2'] == 'Poison'
+                )]
+
+print(df.to_string())
